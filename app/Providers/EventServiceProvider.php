@@ -13,8 +13,12 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'App\Events\Event' => [
-            'App\Listeners\EventListener',
+        'App\Events\TastEvent' => [
+            'App\Listeners\TaskEventListner',
+            // you can make many listner of single event
+            /*'App\Listeners\TaskEventListner',
+            'App\Listeners\TaskEventListner',
+            'App\Listeners\TaskEventListner',*/
         ],
     ];
 
