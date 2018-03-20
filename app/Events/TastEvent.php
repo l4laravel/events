@@ -19,9 +19,11 @@ class TastEvent
      *
      * @return void
      */
-    public function __construct()
+
+    public $message;
+    public function __construct($message)
     {
-        //
+        $this->message = $message;
     }
 
     /**

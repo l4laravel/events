@@ -15,7 +15,7 @@ class TaskEventListner
      */
     public function __construct()
     {
-        //
+
     }
 
     /**
@@ -26,6 +26,6 @@ class TaskEventListner
      */
     public function handle(TastEvent $event)
     {
-        //
+         dd($event);
     }
 }

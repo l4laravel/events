@@ -11,6 +11,15 @@
 |
 */
 
+use App\Events\TastEvent;
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+
+Route::get('/event', function (){
+
+    event(new TastEvent('hey how are you?'));
+
 });
